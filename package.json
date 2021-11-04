@@ -1,0 +1,46 @@
+{
+  "name": "heroku-cors-server-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha ./test/test*.js --reporter spec",
+    "test-coverage": "istanbul cover ./node_modules/.bin/_mocha -- test/test.js test/test-ratelimit.js --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walteraandrade/heroku-cors-server-test.git"
+  },
+  "keywords": [
+    "cors",
+    "cross-domain",
+    "http-proxy",
+    "proxy",
+    "heroku"
+  ],
+  "main": "./server.js",
+  "files": [
+    "src/",
+    "server.js"
+  ],
+  "dependencies": {
+    "dotenv": "10.0.0",
+    "http-proxy": "1.11.1",
+    "proxy-from-env": "0.0.1"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.6",
+    "eslint": "2.2.0",
+    "istanbul": "0.4.2",
+    "lolex": "1.5.0",
+    "mocha": "3.4.2",
+    "nock": "8.2.1",
+    "supertest": "2.0.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walteraandrade/heroku-cors-server-test/issues"
+  },
+  "homepage": "https://github.com/walteraandrade/heroku-cors-server-test#readme"
+}
